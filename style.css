@@ -17,37 +17,357 @@
   }
 }
 
-.icon-square {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 0.75rem;
-}
-
-.profile-img {
-  height: 100px;
-  border-radius: 50%;
-}
-
-
 @media (max-width: 575.98px) {
   body{
     margin: 0;
   }
+
   .iphone{
     display: flex;
     flex-flow: column wrap;
   }
+
   img{
     height: 595px;
     padding: 100px 0 0 25px;
   }
+
   h1{
-    font-family: 'Roboto', sans-serif;
+    font-size: 2.3rem;
+    font-family: 'Mulish', sans-serif;
+    margin-left: 22px;
   }
+  
+  p, li, a{
+    font-family: 'Mulish', sans-serif;
+  }
+
   div > button{
-    width: 200px;
+    height: 50px;
+    margin: 0 0 5px 22px;
+    width: 90%;
   }
-  h3{
+
+  button{
+    background-color: white;
+    border: solid white 1px;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+  }
+
+  .btn-outline-light{
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    color: white;
+  }
+
+  #features{
+    display: grid;
+    margin: 100px 20px 100px 30px;
+  }
+
+  .icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    float: left;
+
+  }
+
+  .feat{
+    font-size: 1.2rem;
+    margin: 15px 0 0 35px;
+  }
+
+  .icon{
+    display: flex;
+    align-items: center;
+    margin: 15px 0 0 0;
+  }
+
+  h2, h3,h4, h5{
     font-family: 'Raleway', sans-serif;
   }
+
+  #testimonial{
+    background-color: rgb(252, 248, 177);
+    padding: 25px 0 25px 0;
+  }
+
+  .dog-words{
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .profile{
+    padding: 20px 0 50px 0;  
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .profile-img {
+    height: 100px;
+    border-radius: 50%;
+    padding: 0;
+  }
+
+  .col-lg-6{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .brand-image{
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+
+  #pricing{
+    padding: 20px 0 20px 0;
+  }
+
+  #pricing > p{
+    color: grey;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .card-body{
+    text-align: center;
+  }
+
+  h2{
+    padding: 5px 0 5px 0;
+    text-align: center;
+  }
+
+  .card-col{
+    margin: 25px 0 10px 0;
+    width: 82%;
+  }
+
+  .coll{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .btn-outline-primary{
+    border: solid 1px darkred;
+    border-radius: 10px;
+    color: darkred;
+    width: 85%;
+  }
+  
+    /* background: (200deg, darkred, salmon, #fafafa);
+    background-size: 120% 120%;
+    animation: outline-animation 5s;  */
+
+  .btn-outline-primary:hover{
+    background-color: darkred;
+    color: #fafafa;
+  }
+
+  #footer{
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    color: white;
+    padding: 0 0 15px 15px;
+  }
+
+  li{
+    list-style: none;
+  }
+
+  .nav-link{
+    color:#fafafa;
+    text-decoration: none;
+  }
+
+  .nav-link:hover{
+    color: darkred;
+  }
 }
+
+@media (min-width: 575.98px) and (max-width: 767.98px) { 
+
+  body{
+    margin: 0;
+  }
+
+  .iphone{
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  img{
+    height: 595px;
+    padding: 100px 0 0 25px;
+  }
+
+  h1{
+    font-size: 2.3rem;
+    font-family: 'Mulish', sans-serif;
+    margin-left: 22px;
+  }
+  
+  p, li, a{
+    font-family: 'Mulish', sans-serif;
+  }
+
+  div > button{
+    height: 50px;
+    margin: 0 0 5px 22px;
+    width: 90%;
+  }
+
+  button{
+    background-color: white;
+    border: solid white 1px;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+  }
+
+  .btn-outline-light{
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    color: white;
+  }
+
+  #features{
+    display: grid;
+    margin: 100px 20px 100px 30px;
+  }
+
+  .icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    float: left;
+
+  }
+
+  .feat{
+    font-size: 1.2rem;
+    margin: 15px 0 0 35px;
+  }
+
+  .icon{
+    display: flex;
+    align-items: center;
+    margin: 15px 0 0 0;
+  }
+
+  h2, h3,h4, h5{
+    font-family: 'Raleway', sans-serif;
+  }
+
+  #testimonial{
+    background-color: rgb(252, 248, 177);
+    padding: 25px 0 25px 0;
+  }
+
+  .dog-words{
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .profile{
+    padding: 20px 0 50px 0;  
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .profile-img {
+    height: 100px;
+    border-radius: 50%;
+    padding: 0;
+  }
+
+  .col-lg-6{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .brand-image{
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+
+  #pricing{
+    padding: 20px 0 20px 0;
+  }
+
+  #pricing > p{
+    color: grey;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .card-body{
+    text-align: center;
+  }
+
+  h2{
+    padding: 5px 0 5px 0;
+    text-align: center;
+  }
+
+  .card-col{
+    margin: 25px 0 10px 0;
+    width: 82%;
+  }
+
+  .coll{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .btn-outline-primary{
+    border: solid 1px darkred;
+    border-radius: 10px;
+    color: darkred;
+    width: 85%;
+  }
+
+  .btn-outline-primary:hover{
+    background-color: darkred;
+    color: #fafafa;
+  }
+
+  #footer{
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    color: white;
+    padding: 0 0 15px 15px;
+  }
+
+  li{
+    list-style: none;
+  }
+
+  .nav-link{
+    color:#fafafa;
+    text-decoration: none;
+  }
+
+  .nav-link:hover{
+    color: darkred;
+  }
+
+
+ }
