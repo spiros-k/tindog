@@ -17,55 +17,84 @@
   }
 }
 
+#footer{
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  color: white;
+  padding: 0 0 15px 15px;
+}
+
+  .text-body-secondary{
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .tindog-c{
+    color: #0d0d0d;
+    font-family: "Noto sans";
+  }
+
 @media (max-width: 575.98px) {
   body{
     margin: 0;
   }
 
-  .iphone{
+  #title{
     display: flex;
     flex-flow: column wrap;
+    padding-left: 10%;
   }
 
-  img{
+
+  .iphone{
     height: 595px;
-    padding: 100px 0 0 25px;
+    padding: 100px 0 0 0px;
   }
 
   h1{
-    font-size: 2.3rem;
+    font-size: 1.75rem;
     font-family: 'Mulish', sans-serif;
-    margin-left: 22px;
+    width: 90%;
   }
   
   p, li, a{
     font-family: 'Mulish', sans-serif;
   }
 
-  div > button{
-    height: 50px;
-    margin: 0 0 5px 22px;
-    width: 90%;
+  p{
+    font-size: 1rem;
   }
 
-  button{
+  .btn-primary{
     background-color: white;
     border: solid white 1px;
-    border-radius: 12px;
+    border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
+    height: 50px;
+    margin: 0 0 8px 0px;
+    width: 90%;
   }
 
   .btn-outline-light{
     background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
+    background-color: white;
+    border: solid white 1px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
     color: white;
+    height: 50px;
+    margin: 0 0 8px 0px;
+    width: 90%;
   }
 
   #features{
     display: grid;
-    margin: 100px 20px 100px 30px;
+    margin: 55px 20px 55px 30px;
   }
 
   .icon-square {
@@ -73,22 +102,25 @@
     height: 3rem;
     border-radius: 0.75rem;
     float: left;
-
   }
 
   .feat{
     font-size: 1.2rem;
-    margin: 15px 0 0 35px;
+    margin: 8px 0 0 35px;
   }
 
   .icon{
     display: flex;
     align-items: center;
-    margin: 15px 0 0 0;
+    margin: 10px 0 0 0;
   }
 
-  h2, h3,h4, h5{
+  h2, h3, h4, h5{
     font-family: 'Raleway', sans-serif;
+  }
+
+  h3{
+    margin: 0 5% 0 5%;
   }
 
   #testimonial{
@@ -109,7 +141,7 @@
   }
 
   .profile-img {
-    height: 100px;
+    height: 110px;
     border-radius: 50%;
     padding: 0;
   }
@@ -122,12 +154,19 @@
 
   .brand-image{
     padding: 0;
-    padding-top: 10px;
-    padding-bottom: 15px;
+    margin: 5px 0 5px 0;
   }
 
   #pricing{
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
     padding: 20px 0 20px 0;
+
+  }
+
+  #pricing > h1{
+    text-align: center;
   }
 
   #pricing > p{
@@ -138,7 +177,18 @@
   }
 
   .card-body{
+    border: solid 0.5px lightgrey;
+    border-radius: 10px;
     text-align: center;
+  }
+
+  .card-title{
+    margin-left: 5%;
+  }
+
+  .text-body-secondary{
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
   }
 
   h2{
@@ -148,22 +198,27 @@
 
   .card-col{
     margin: 25px 0 10px 0;
-    width: 82%;
+    width: 90%;
   }
 
   .coll{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    width: 400px;
   }
 
   .btn-outline-primary{
-    border: solid 1px darkred;
+    background-color: white;
     border-radius: 10px;
+    border: solid 1px darkred;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
     color: darkred;
-    width: 85%;
+    height: 40px;
+    width: 100%;
   }
-  
+
     /* background: (200deg, darkred, salmon, #fafafa);
     background-size: 120% 120%;
     animation: outline-animation 5s;  */
@@ -171,14 +226,6 @@
   .btn-outline-primary:hover{
     background-color: darkred;
     color: #fafafa;
-  }
-
-  #footer{
-    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
-    background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
-    color: white;
-    padding: 0 0 15px 15px;
   }
 
   li{
@@ -195,44 +242,50 @@
   }
 }
 
-@media (min-width: 575.98px) and (max-width: 767.98px) { 
 
+
+
+@media (min-width: 575.99px) and (max-width: 767.99px) { 
   body{
     margin: 0;
   }
 
-  .iphone{
+  #title{
     display: flex;
     flex-flow: column wrap;
+    padding: 0 0 0 10%;
   }
 
-  img{
-    height: 595px;
-    padding: 100px 0 0 25px;
+  .iphone{
+    height: 555px;
+    padding: 100px 0 0 0px;
+    width: 310px;
   }
 
   h1{
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-family: 'Mulish', sans-serif;
-    margin-left: 22px;
+    margin-left: 0px;
+    width: 80%;
   }
   
   p, li, a{
     font-family: 'Mulish', sans-serif;
   }
 
-  div > button{
-    height: 50px;
-    margin: 0 0 5px 22px;
-    width: 90%;
+  p{
+    font-size: 1rem;
   }
 
-  button{
+  .btn-primary{
     background-color: white;
     border: solid white 1px;
-    border-radius: 12px;
+    border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
+    width: 500px;
+    height: 50px;
+    margin: 0 0 8px 0px;
   }
 
   .btn-outline-light{
@@ -240,11 +293,19 @@
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
     color: white;
+    background-color: white;
+    border: solid white 1px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    height: 50px;
+    margin: 0 0 8px 0px;
+    width: 500px;
   }
 
   #features{
     display: grid;
-    margin: 100px 20px 100px 30px;
+    margin: 55px 20px 55px 30px;
   }
 
   .icon-square {
@@ -252,12 +313,12 @@
     height: 3rem;
     border-radius: 0.75rem;
     float: left;
-
+    margin-left: 10%;
   }
 
   .feat{
     font-size: 1.2rem;
-    margin: 15px 0 0 35px;
+    margin: 10px 0 0 35px;
   }
 
   .icon{
@@ -268,6 +329,10 @@
 
   h2, h3,h4, h5{
     font-family: 'Raleway', sans-serif;
+  }
+
+  h3{
+    margin: 0 5% 0 5%;
   }
 
   #testimonial{
@@ -288,7 +353,7 @@
   }
 
   .profile-img {
-    height: 100px;
+    height: 110px;
     border-radius: 50%;
     padding: 0;
   }
@@ -301,12 +366,18 @@
 
   .brand-image{
     padding: 0;
-    padding-top: 10px;
-    padding-bottom: 15px;
+    margin: 5px 0 5px 0;
+  }
+  
+  #pricing{
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px 0 20px 0;
   }
 
-  #pricing{
-    padding: 20px 0 20px 0;
+  #pricing > h1{
+    text-align: center;
   }
 
   #pricing > p{
@@ -317,6 +388,8 @@
   }
 
   .card-body{
+    border: solid 0.5px lightgrey;
+    border-radius: 10px;
     text-align: center;
   }
 
@@ -330,30 +403,39 @@
     width: 82%;
   }
 
+  .card-title{
+    padding-left: 10%;
+  }
+
   .coll{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    width: 450px;
+  }
+
+  .text-body-secondary{
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .btn-outline-primary{
     border: solid 1px darkred;
     border-radius: 10px;
     color: darkred;
-    width: 85%;
+    background-color: white;
+    border-radius: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2rem;
+    height: 50px;
+    margin: 0px;
+    width: 500px;
+    width: 100%;
   }
 
   .btn-outline-primary:hover{
     background-color: darkred;
     color: #fafafa;
-  }
-
-  #footer{
-    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
-    background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
-    color: white;
-    padding: 0 0 15px 15px;
   }
 
   li{
@@ -368,6 +450,440 @@
   .nav-link:hover{
     color: darkred;
   }
+}
 
 
- }
+
+
+@media (min-width: 767.98px) and (max-width: 991.98px) { 
+
+  body{
+    margin: 0;
+  }
+
+  #title{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0 0 0 10%;
+  }
+
+  .iphone{
+    height: 575px;
+    padding: 70px 0 0 0px;
+    width: 310px;
+  }
+
+ h1{
+    font-size: 2rem;
+    font-family: 'Mulish', sans-serif;
+    margin-left: 0px;
+    width: 80%;
+  }
+
+  p, li, a{
+    font-family: 'Mulish', sans-serif;
+  }
+
+  p{
+    font-size: 1rem;
+  }
+
+  .d-grid{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+  }
+
+  .btn-primary{
+    background-color: white;
+    border: solid white 1px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    height: 50px;
+    width: 200px;
+  }
+
+  .btn-outline-light{
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    color: white;
+    background-color: white;
+    border: solid white 1px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    height: 50px;
+    margin: 0 0 8px 0px;
+    width: 200px;
+  }
+
+  #features{
+    display: grid;
+    margin: 65px 20px 65px 30px;
+  }
+
+  .icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    float: left;
+  }
+
+  .feat{
+    font-size: 1.2rem;
+    margin: 7px 0 0 35px;
+  }
+
+  .icon{
+    display: flex;
+    align-items: center;
+    margin: 15px 0 0 0;
+  }
+
+  h2, h3,h4, h5{
+    font-family: 'Raleway', sans-serif;
+  }
+
+  h3{
+    margin: 0 5% 0 5%;
+  }
+
+  #testimonial{
+    background-color: rgb(252, 248, 177);
+    padding: 25px 0 25px 0;
+  }
+
+  .dog-words{
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .profile{
+    padding: 20px 0 50px 0;  
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .profile-img {
+    height: 110px;
+    border-radius: 50%;
+    padding: 0;
+  }
+
+  .col-lg-6{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .brand-image{
+    padding: 0;
+    margin: 5px 0 5px 0;
+  }
+  
+  #pricing{
+    padding: 60px 0 20px 0;
+    text-align: center;
+  }
+
+  #pricing > h1{
+    font-size: 2.75rem;
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    padding-left: 10%;
+  }
+
+  #pricing > p{
+    color: grey;
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+  }
+
+  .row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .card-body{
+    border: solid 0.5px lightgrey;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  h2{
+    padding: 5px 0 5px 0;
+    text-align: center;
+  }
+
+  .card-col{
+    margin: 25px 0 10px 0;
+    width: 100%;
+  }
+
+  .card-title{
+    padding-left: 10%;
+  }
+
+  .coll{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 245px;
+  }
+
+  .btn-outline-primary{
+    border: solid 1px darkred;
+    border-radius: 10px;
+    color: darkred;
+    font-family: 'Noto Sans', sans-serif;
+    width: 100%;
+    background-color: white;
+    font-size: 1.2rem;
+    height: 50px;
+    margin: 0 0 0px 0px;
+    width: 100%;
+  }
+
+  .btn-outline-primary:hover{
+    background-color: darkred;
+    color: #fafafa;
+  }
+
+  li{
+    font-size: 0.92rem;
+    list-style: none;
+    margin-right: 20%;
+  }
+
+  .nav-link{
+    color:#fafafa;
+    text-decoration: none;
+  }
+
+  .nav-link:hover{
+    color: darkred;
+  }
+}
+
+
+
+
+@media (min-width: 991.99px) and (max-width: 1200px) { 
+
+  body{
+    margin: 0;
+  }
+
+  #title{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0 0 0 10%;
+  }
+
+  .iphone{
+    height: 575px;
+    padding: 70px 0 0 0px;
+    width: 310px;
+  }
+
+ h1{
+    font-size: 2rem;
+    font-family: 'Mulish', sans-serif;
+    margin-left: 0px;
+    width: 80%;
+  }
+
+  p, li, a{
+    font-family: 'Mulish', sans-serif;
+  }
+
+  p{
+    font-size: 1rem;
+  }
+
+  .d-grid{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+  }
+
+  .btn-primary{
+    background-color: white;
+    border: solid white 1px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    height: 50px;
+    width: 200px;
+  }
+
+  .btn-outline-light{
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    color: white;
+    background-color: white;
+    border: solid white 1px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    height: 50px;
+    margin: 0 0 8px 0px;
+    width: 200px;
+  }
+
+  #features{
+    display: grid;
+    margin: 65px 20px 65px 30px;
+  }
+
+  .icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    float: left;
+  }
+
+  .feat{
+    font-size: 1.2rem;
+    margin: 7px 0 0 35px;
+  }
+
+  .icon{
+    display: flex;
+    align-items: center;
+    margin: 15px 0 0 0;
+  }
+
+  h2, h3,h4, h5{
+    font-family: 'Raleway', sans-serif;
+  }
+
+  h3{
+    margin: 0 5% 0 5%;
+  }
+
+  #testimonial{
+    background-color: rgb(252, 248, 177);
+    padding: 25px 0 25px 0;
+  }
+
+  .dog-words{
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .profile{
+    padding: 20px 0 50px 0;  
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .profile-img {
+    height: 110px;
+    border-radius: 50%;
+    padding: 0;
+  }
+
+  .col-lg-6{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .brand-image{
+    padding: 0;
+    margin: 5px 0 5px 0;
+  }
+  
+  #pricing{
+    padding: 60px 0 20px 0;
+    text-align: center;
+  }
+
+  #pricing > h1{
+    font-size: 2.75rem;
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    padding-left: 10%;
+  }
+
+  #pricing > p{
+    color: grey;
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+  }
+
+  .row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .card-body{
+    border: solid 0.5px lightgrey;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  h2{
+    padding: 5px 0 5px 0;
+    text-align: center;
+  }
+
+  .card-col{
+    margin: 25px 0 10px 0;
+    width: 100%;
+  }
+
+  .card-title{
+    padding-left: 10%;
+  }
+
+  .coll{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 245px;
+  }
+
+  .btn-outline-primary{
+    border: solid 1px darkred;
+    border-radius: 10px;
+    color: darkred;
+    font-family: 'Noto Sans', sans-serif;
+    width: 100%;
+    background-color: white;
+    font-size: 1.2rem;
+    height: 50px;
+    margin: 0 0 0px 0px;
+    width: 100%;
+  }
+
+  .btn-outline-primary:hover{
+    background-color: darkred;
+    color: #fafafa;
+  }
+
+  li{
+    font-size: 0.92rem;
+    list-style: none;
+    margin-right: 20%;
+  }
+
+  .nav-link{
+    color:#fafafa;
+    text-decoration: none;
+  }
+
+  .nav-link:hover{
+    color: darkred;
+  }
+}
+
+
