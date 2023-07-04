@@ -78,10 +78,7 @@
   }
 
   .btn-outline-light{
-    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
-    background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
-    background-color: white;
+    background: rgb(0,0,0,0);
     border: solid white 1px;
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -90,6 +87,15 @@
     height: 50px;
     margin: 0 0 8px 0px;
     width: 90%;
+  }
+
+  .btn-primary:hover{
+    background-color: #0d0d0d;
+    color: #fafafa;
+  }
+
+  .btn-outline-light:hover{
+    color: black;
   }
 
   #features{
@@ -289,11 +295,8 @@
   }
 
   .btn-outline-light{
-    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
-    background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
+    background: rgb(0,0,0,0);
     color: white;
-    background-color: white;
     border: solid white 1px;
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -301,6 +304,15 @@
     height: 50px;
     margin: 0 0 8px 0px;
     width: 500px;
+  }
+
+  .btn-primary:hover{
+    background-color: #0d0d0d;
+    color: #fafafa;
+  }
+
+  .btn-outline-light:hover{
+    color: black;
   }
 
   #features{
@@ -505,11 +517,8 @@
   }
 
   .btn-outline-light{
-    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
-    background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
+    background: rgb(0,0,0,0);
     color: white;
-    background-color: white;
     border: solid white 1px;
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -517,6 +526,15 @@
     height: 50px;
     margin: 0 0 8px 0px;
     width: 200px;
+  }
+ 
+  .btn-primary:hover{
+    background-color: #0d0d0d;
+    color: #fafafa;
+  }
+
+  .btn-outline-light:hover{
+    color: black;
   }
 
   #features{
@@ -679,22 +697,32 @@
   }
 
   #title{
+    padding: 0%;
+  }
+
+  #cont{
     display: flex;
-    flex-flow: column wrap;
-    padding: 0 0 0 10%;
+    align-items: center;
   }
 
   .iphone{
+    float: right;
     height: 575px;
-    padding: 70px 0 0 0px;
-    width: 310px;
+    order: 1;
+    width: 325px;
+    padding: 5% 5% 0% 5%;
+  }
+
+  .d-grid{
+    align-self: flex-end;
+    display: flex;
+    gap: 25px;
   }
 
  h1{
-    font-size: 2rem;
+    font-size: 2.35rem;
     font-family: 'Mulish', sans-serif;
-    margin-left: 0px;
-    width: 80%;
+
   }
 
   p, li, a{
@@ -705,12 +733,6 @@
     font-size: 1rem;
   }
 
-  .d-grid{
-    display: flex;
-    flex-flow: row wrap;
-    gap: 15px;
-  }
-
   .btn-primary{
     background-color: white;
     border: solid white 1px;
@@ -718,22 +740,28 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     height: 50px;
-    width: 200px;
+    width: 180px;
   }
 
   .btn-outline-light{
-    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
-    background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
     color: white;
-    background-color: white;
+    background: rgb(0,0,0,0);
     border: solid white 1px;
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     height: 50px;
     margin: 0 0 8px 0px;
-    width: 200px;
+    width: 180px;
+  }
+
+  .btn-primary:hover{
+    background-color: rgb(18, 18, 18);
+    color: #fafafa;
+  }
+
+  .btn-outline-light:hover{
+    color: black;
   }
 
   #features{
